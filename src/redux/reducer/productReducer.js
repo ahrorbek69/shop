@@ -1,17 +1,13 @@
 import { Actiontype } from "../contacts/action-type"
 
 const initialState = {
-    product: {
-        id: 1,
-        title: "Ahrorbek",
-        category: "Full-stack developer"
-    }
+    product: []
 }
 
-export const productReducer = (state = initialState , {type,payload}) => {
-    switch(type){
+export const productReducer = (state = initialState, { type, payload }) => {
+    switch (type) {
         case Actiontype.SET_PRODUCTS:
-            return state
+            return { ...state, product: payload }
         default: return state
     }
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
         <div className="ui pointing menu" style={{padding: "4px 30px"}}>
-                        <Link to='/product/0' className="ui animated button" tabIndex="0">
+                        <Link to='/' className="ui animated button" tabIndex="0">
                 <div className="visible content">Next</div>
                 <div className="hidden content">
                     <i className="right arrow icon"></i>
