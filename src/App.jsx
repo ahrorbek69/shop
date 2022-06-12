@@ -2,7 +2,8 @@ import React from 'react'
 import {Switch, Route, BrowserRouter} from 'react-router-dom'
 import Header from './container/Header'
 import Notfaund from './container/notFaund/Notfaund'
-import Productcomponents from './container/Productcomponents'
+// import Productcomponents from './container/Productcomponents'
+import ProductDeteils from './container/ProductDeteils'
 import ProductList from './container/ProductList'
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
             <ProductList />
           </Route>
           <Route path='/product/:id'>
-            <Productcomponents />
+            <ProductDeteils />
           </Route>
           <Route>
             <Notfaund />
